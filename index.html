@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker App</title>
+</head>
+<body>
+    <h1>Expense Tracker App</h1>
+    <div class="input-section">
+        <label for="category-select">Category:</label>
+        <select id="category-select">
+            <option value="Food & Dining 🍔">Food & Dining 🍔</option>
+            <option value="Transportation 🚗">Transportation 🚗</option>
+            <option value="Housing & Utilities 🏠">Housing & Utilities 🏠</option>
+            <option value="Shopping 🛍">Shopping 🛍</option>
+            <option value="Health & Fitness 🏋‍♂">Health & Fitness 🏋‍♂</option>
+            <option value="Entertainment 🎬">Entertainment 🎬</option>
+            <option value="Education 📚">Education 📚</option>
+            <option value="Savings & Investments 💰">Savings & Investments 💰</option>
+            <option value="Miscellaneous 🗂">Miscellaneous 🗂</option>
+        </select>
+        <label for="amount-input">Amount:</label>
+        <input type="number" id="amount-input">
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input">
+        <button id="add-btn">Add</button>
+    </div>
+    <div class="expenses-list">
+        <h2>Expenses List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expnese-table-body">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td id="total-amount"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
